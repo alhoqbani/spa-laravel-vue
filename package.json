@@ -12,7 +12,11 @@
   "devDependencies": {
     "axios": "^0.15.3",
     "laravel-mix": "0.*",
+    "moments": "0.0.2",
     "vue": "^2.1.10",
     "vue-router": "^2.5.3"
+  },
+  "dependencies": {
+    "moment": "^2.18.1"
   }
 }
