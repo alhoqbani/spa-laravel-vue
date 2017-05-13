@@ -16,9 +16,7 @@
 
                     </div>
                 </div>
-
-                <add-to-stream></add-to-stream>
-
+                <add-to-stream @completed="addToStream"></add-to-stream>
             </div>
         </div>
     </div>
@@ -41,6 +39,14 @@
         methods: {
             postedOn(status) {
                 return moment(status.created_at).fromNow();
+            },
+
+            addToStream(status) {
+
+                // this.statuses.unshift(status);
+                this.statuses.push(status);
+
+                // window.scrollTo(0,0)
             }
         }
     }

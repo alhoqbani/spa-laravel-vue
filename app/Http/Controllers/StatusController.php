@@ -37,12 +37,12 @@ class StatusController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, ['body' => 'required']);
-        
-        $status = User::first(1)
+
+        $status = User::find(1)
             ->statuses()
             ->create($request->
             only('body'));
-        
+
         return $status->load('user');
     }
 
