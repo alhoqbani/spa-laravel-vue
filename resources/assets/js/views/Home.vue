@@ -16,6 +16,9 @@
 
                     </div>
                 </div>
+
+                <add-to-stream></add-to-stream>
+
             </div>
         </div>
     </div>
@@ -23,7 +26,9 @@
 
 <script>
     import moment from 'moment';
+    import addToStream from '../components/addToStream.vue';
     export default {
+        components: { addToStream },
         data() {
             return {
                 statuses: [],

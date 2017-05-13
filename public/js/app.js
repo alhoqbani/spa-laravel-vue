@@ -13904,6 +13904,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_moment__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_addToStream_vue__ = __webpack_require__(481);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_addToStream_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_addToStream_vue__);
 //
 //
 //
@@ -13927,9 +13929,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    components: { addToStream: __WEBPACK_IMPORTED_MODULE_1__components_addToStream_vue___default.a },
     data: function data() {
         return {
             statuses: []
@@ -14306,7 +14313,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "columns"
   }, [_c('div', {
     staticClass: "column"
-  }, _vm._l((_vm.statuses), function(status) {
+  }, [_vm._l((_vm.statuses), function(status) {
     return _c('div', {
       staticClass: "message"
     }, [_c('div', {
@@ -14317,7 +14324,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "textContent": _vm._s(status.body)
       }
     })])
-  }))])])
+  }), _vm._v(" "), _c('add-to-stream')], 2)])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -30535,6 +30542,102 @@ webpackContext.keys = function webpackContextKeys() {
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
 webpackContext.id = 447;
+
+/***/ }),
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */,
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */,
+/* 478 */,
+/* 479 */,
+/* 480 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+/* 481 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(2)(
+  /* script */
+  __webpack_require__(480),
+  /* template */
+  __webpack_require__(482),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/hamoud/Sites/stream/resources/assets/js/components/addToStream.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] addToStream.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-31a993d0", Component.options)
+  } else {
+    hotAPI.reload("data-v-31a993d0", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 482 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_vm._v("\n    FooBar\n")])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-31a993d0", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
