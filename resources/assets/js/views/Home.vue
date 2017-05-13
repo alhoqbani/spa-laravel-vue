@@ -9,7 +9,7 @@
                         </p>
 
                         <p>
-                            A moments ago..
+                            {{ postedOn(status)}}
                         </p>
                     </div>
                     <div class="message-body" v-text="status.body">
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+    import moment from 'moment';
     export default {
         data() {
             return {
@@ -31,6 +32,11 @@
         created() {
             axios.get('/statuses').
             then(({data}) => this.statuses = data)
+        },
+        methods: {
+            postedOn(status) {
+                return moment(status.created_at).fromNow();
+            }
         }
     }
 </script>
