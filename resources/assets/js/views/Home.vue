@@ -9,7 +9,7 @@
                         </p>
 
                         <p>
-                            {{ postedOn(status)}}
+                            {{ status.created_at | ago}}
                         </p>
                     </div>
                     <div class="message-body" v-text="status.body">
@@ -33,9 +33,10 @@
             axios.get('/statuses').
             then(({data}) => this.statuses = data)
         },
-        methods: {
-            postedOn(status) {
-                return moment(status.created_at).fromNow();
+
+        filters: {
+            ago(date) {
+                return moment(date).fromNow();
             }
         }
     }
