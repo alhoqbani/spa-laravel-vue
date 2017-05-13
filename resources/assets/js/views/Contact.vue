@@ -6,7 +6,7 @@
                     <div class="panel-heading">Contact</div>
 
                     <div class="panel-body">
-                        
+
                     </div>
                 </div>
             </div>
@@ -16,6 +16,11 @@
 
 <script>
     export default {
+        data() {
+            return {
+                contact: 'Phone Number'
+            }
+        },
         created() {
             console.log('Component mounted.')
         }

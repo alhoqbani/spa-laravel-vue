@@ -6,5 +6,9 @@ window.Vue = require('vue');
 new Vue({
     el: '#app',
 
-    router: router,
+    data: {
+        test: 'Hamoud'
+    },
+
+    router
 });
